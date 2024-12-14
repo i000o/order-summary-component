@@ -1,16 +1,16 @@
 @use 'reset'; 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @mixin button-style {
-    margin: $card-edge;
+    margin: $mobile-card-edge;
     border-radius: 12px;
     padding: 15px 30px;
 }
 
 $rounded-corners: 16px;
-$card-edge: 20px;
+$mobile-card-edge: 20px;
+$desktop-card-edge: 40px;
 
 body {
-    // display: none;
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,6 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500, 700, 900; 
     background-color: hsl(225, 100%, 94%);
-    // background-color: red;
     width: 100svw;
     height: 100svh;
     text-align: center;
@@ -27,8 +26,8 @@ body {
 section {
     border-radius: $rounded-corners;
     background-color: #FFFFFF;
-    max-width: 20em;
-    // height: auto;
+    max-width: 18em;
+    height: 80vh;
     img {
         float: top;
         max-width: 100%;
@@ -38,8 +37,6 @@ section {
         margin: 0;
         .music-icon {
             border-radius: $rounded-corners;
-            // order: 1;
-            // padding: 20px;
         }
     }
     
@@ -47,39 +44,42 @@ section {
         font-size: 1.4em;
         font-weight: 900;
         color: hsl(223, 47%, 23%);
-        margin: 30px 30px 20px 30px;
+        margin: 30px 30px 15px 30px;
     }
     
     h2 {
-        font-size: 0.9em;
+        font-size: 0.8em;
         color: hsl(224, 23%, 55%);
         font-weight: 500;
-        margin: 20px 40px;
+        margin: 10px 40px;
         line-height: 160%;
     }
     
     aside {
         background-color: hsl(225, 100%, 98%);
-        padding: 10px 20px; 
-        margin: $card-edge;
+        padding: 10px 10px; 
+        margin: $mobile-card-edge;
         border-radius: $rounded-corners;
         display: flex; 
         justify-content: space-between;
         align-items: center;
         p {
-            font-size: 0.8em;
+            font-size: 0.7em;
         }
         div {
             display: flex; 
             justify-content: center;
             align-items: center;
 
+            img {
+               width: 30%;
+            }
+
             .deal {
-                margin: 5px 15px;
+                margin: 5px 10px;
                 display: flex; 
                 flex-direction: column;
                 justify-content: center;
-                // line-height: 90%;
                 
                 .plan {
                 font-weight: 900;
@@ -96,14 +96,14 @@ section {
             font-weight: 900;
             color: hsl(245, 75%, 52%);
             text-decoration: underline;
-            font-size: 0.9em;
+            font-size: 0.88em;
         }
         }
     
     a {
         p {
             font-weight: 900;
-            font-size: 0.85em;
+            font-size: 0.8em;
             letter-spacing: 0.5px;
         }
 
@@ -129,6 +129,26 @@ section {
 footer {
     display: flex; 
     justify-content: center;
-    font-size: 0.7em;
-    margin: 20px;
+    font-size: 0.5em;
+    margin: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+    section {
+        height: auto;
+        max-width: 21em;
+
+        aside {
+            margin: 20px $desktop-card-edge;
+        }
+
+        a {
+            p {
+                font-size: 0.65em;
+            }
+            .payment, .cancel {
+                margin: 5px $desktop-card-edge 10px $desktop-card-edge;
+            }
+        }
+    }
 }
