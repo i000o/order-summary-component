@@ -1,5 +1,10 @@
 @use 'reset'; 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@mixin button-style {
+    margin: $card-edge;
+    border-radius: 12px;
+    padding: 15px 30px;
+}
 
 $rounded-corners: 16px;
 $card-edge: 20px;
@@ -23,9 +28,7 @@ section {
     border-radius: $rounded-corners;
     background-color: #FFFFFF;
     max-width: 20em;
-    // padding: 20px;
-    // margin: 20px; 
-    height: auto;
+    // height: auto;
     img {
         float: top;
         max-width: 100%;
@@ -93,8 +96,34 @@ section {
             font-weight: 900;
             color: hsl(245, 75%, 52%);
             text-decoration: underline;
+            font-size: 0.9em;
         }
         }
+    
+    a {
+        p {
+            font-weight: 900;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+
+        .payment {
+            background-color: hsl(245, 75%, 52%);
+            color:  hsl(225, 100%, 94%);
+            @include button-style;
+            box-shadow: 0px 10px 27px -4px hsl(245, 75%, 52%, 50%); 
+            margin-bottom: 0px;
+
+        }
+
+        .cancel {
+            color: hsl(224, 23%, 55%);
+            @include button-style;
+            margin: 10px 0 20px 0;
+            padding: 10px 0 30px 0; 
+        }
+    }
+
     }
 
 footer {
