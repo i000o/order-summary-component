@@ -27,7 +27,8 @@ section {
     border-radius: $rounded-corners;
     background-color: #FFFFFF;
     max-width: 18em;
-    height: 80vh;
+    // height: 80vh;
+    height: auto;
     img {
         float: top;
         max-width: 100%;
@@ -138,8 +139,29 @@ footer {
         height: auto;
         max-width: 21em;
 
+        h1 {
+            font-size: 1.3em;
+        }
+
+        h2 {
+            font-size: 0.75em;
+        }
+
         aside {
             margin: 20px $desktop-card-edge;
+
+            .change {
+                font-size: 0.85em;
+
+                :hover {
+                    opacity: 50%;
+                }
+            }
+
+            a.change:link:hover {
+                text-decoration: none;
+            }
+            }
         }
 
         a {
@@ -148,7 +170,20 @@ footer {
             }
             .payment, .cancel {
                 margin: 5px $desktop-card-edge 10px $desktop-card-edge;
+                padding: 10px 30px;
+                border-radius: 10px;
+            }
+
+            .cancel {
+                padding: 10px 0 35px 0; 
+            }
+
+            .payment:hover {
+                opacity: 50%;
+            }
+
+            .cancel:hover {
+                color: hsl(223, 47%, 23%);
             }
         }
     }
-}
