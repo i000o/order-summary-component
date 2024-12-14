@@ -1,0 +1,105 @@
+@use 'reset'; 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+$rounded-corners: 16px;
+$card-edge: 20px;
+
+body {
+    // display: none;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500, 700, 900; 
+    background-color: hsl(225, 100%, 94%);
+    // background-color: red;
+    width: 100svw;
+    height: 100svh;
+    text-align: center;
+}
+
+section {
+    border-radius: $rounded-corners;
+    background-color: #FFFFFF;
+    max-width: 20em;
+    // padding: 20px;
+    // margin: 20px; 
+    height: auto;
+    img {
+        float: top;
+        max-width: 100%;
+        border-radius: $rounded-corners;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin: 0;
+        .music-icon {
+            border-radius: $rounded-corners;
+            // order: 1;
+            // padding: 20px;
+        }
+    }
+    
+    h1 {
+        font-size: 1.4em;
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+        margin: 30px 30px 20px 30px;
+    }
+    
+    h2 {
+        font-size: 0.9em;
+        color: hsl(224, 23%, 55%);
+        font-weight: 500;
+        margin: 20px 40px;
+        line-height: 160%;
+    }
+    
+    aside {
+        background-color: hsl(225, 100%, 98%);
+        padding: 10px 20px; 
+        margin: $card-edge;
+        border-radius: $rounded-corners;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        p {
+            font-size: 0.8em;
+        }
+        div {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+
+            .deal {
+                margin: 5px 15px;
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                // line-height: 90%;
+                
+                .plan {
+                font-weight: 900;
+                margin: 2px;
+                }
+                .price {
+                color: hsl(224, 23%, 55%);
+                font-weight: 700;
+                margin: 2px;
+                }
+            }
+        }
+        .change {
+            font-weight: 900;
+            color: hsl(245, 75%, 52%);
+            text-decoration: underline;
+        }
+        }
+    }
+
+footer {
+    display: flex; 
+    justify-content: center;
+    font-size: 0.7em;
+    margin: 20px;
+}

@@ -19,7 +19,13 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## The task
 
+## Goal
+
+Focus on Sass
+
 ## Approach
+
+Mobile-First workflow
 
 ## Outcome
 
@@ -32,13 +38,14 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 :gear: Semantic HTML5 markup  
 :gear: CSS Flex  
-:gear: Desktop-first workflow
+:gear: Mobile-first workflow
 
 ## My process
 
--
--
--
+:alien: I wrote the HTML
+:alien: I initiated Sass
+:alien: I imported my CSS Reset partial with `@use`.
+First problem - My Sass stopped compiling OR it would compile but the changes wouldn't be reflected in the server.
 
 ## Time taken :alarm_clock:
 
@@ -56,4 +63,5 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 :grey_exclamation:
 
 ## Useful resources
+
 # order-summary-component
