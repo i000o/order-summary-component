@@ -5,7 +5,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ## Table of contents
 
 - [Overview](#overview)
-- [Approach](#approach)
+- [Goal](#goal)
 - [Outcome](#outcome)
 - [My process](#my-process)
 - [Built with](#built-with)
@@ -16,15 +16,11 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Overview
 
-For this challenge, I had to create a static order summary card page.
+For this challenge, I had to create a static order summary card page. I used it as an opportunity to practice a mobile-first workflow again.
 
 ## Goal
 
 My goal with this project is to use Sass as a pre-processor to make my CSS writing more efficient.
-
-## Approach
-
-I'll use a Mobile-first workflow to practice this too, as I have less experience with this workflow.
 
 ## Outcome
 
@@ -52,7 +48,7 @@ I'll use a Mobile-first workflow to practice this too, as I have less experience
 
 ## Time taken
 
-:alarm_clock: Mobile: 3 hrs
+:alarm_clock: Mobile: 3 hrs  
 :alarm_clock: Desktop: 2 hrs
 
 ## Feedback
